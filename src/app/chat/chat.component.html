@@ -1,0 +1,25 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4 chatBot">
+                <h1>Angular Chat Bot</h1>
+                <ng-container *ngFor="let message of messages | async">
+                    <div class="message" [ngClass]="{'from': message.sentBy === 'bot',
+                    'to': message.sentBy === 'user'}">{{message.content}}
+                    </div>
+                </ng-container>
+                </div>
+    </div>  
+    <div class="row">
+            <div class="col-sm-4"></div>
+        <div class="col-sm-4 chatBot-messageBox">
+                <label for="nameField" style="font">Type your message here</label><br>
+                <input [(ngModel)]= "formValue" (keyup.enter)="sendMessage()" type="text" style="border-radius:25px">&nbsp;<button (click)="sendMessage()" class="btn btn-primary">Send</button>
+            
+        </div>
+        
+    </div>
+</div>
+
+
+

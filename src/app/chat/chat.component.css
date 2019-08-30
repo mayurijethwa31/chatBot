@@ -1,0 +1,34 @@
+
+.from {
+    border-radius: 25px;
+    background-color: dodgerblue;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  float:left;
+  clear:right;
+}
+ 
+.to {
+    border-radius: 25px;
+    background-color: darkgray;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  float: right;
+  clear:left;
+}
+
+.chatBot {
+    background-color:white;
+    border-radius: 25px;
+}
+
+.messagebox {
+    padding-bottom: 10px;
+}
+
+.chatBot-messageBox {
+    background-color:white;
+    border-radius: 25px;
+}
